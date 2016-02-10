@@ -1,19 +1,43 @@
 package com.mmdb.moviepojos;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "MOVIE_DETAILS")
 public class MovieDetails {
+	@Id
 	private int id;
+	@Column(name = "MOVIE_NAME")
 	private String movieName;
+
+	@Column(name = "DTAE_OF_RELEASE")
 	private String dateOfRelease;
+
+	@Column(name = "DIRECTOR_NAME")
 	private String directorName;
+
+	@Column(name = "ACTORS")
 	private String Actors;
+
+	@Column(name = "PRODUCER")
 	private String producer;
+
+	@Column(name = "DISTRIBUTOR")
 	private String distributor;
+
+	@Column(name = "CINEMATOGRAPHER")
 	private String cinematographer;
+
+	@Column(name = "SCRIPT_WRITER")
 	private String scriptWritrt;
+
+	@Column(name = "MUSIC_DIRECTOR")
 	private String musicDirector;
+
+	@Column(name = "ORGINAL_SCORE")
 	private String orginalScore;
 
 	public int getId() {
